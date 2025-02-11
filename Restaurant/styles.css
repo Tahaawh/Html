@@ -5,60 +5,64 @@
 }
 
 body {
-    font-family: "Arial", sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: "Vazir", "Arial", sans-serif;
+    background-color: #f8f4e9;
+    color: #2c1810;
     line-height: 1.6;
+    direction: rtl;
 }
 
-.container {
+.main-layout {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto;
-    gap: 10px;
-    height: 100vh;
-    padding: 10px;
+    gap: 20px;
+    min-height: 100vh;
+    padding: 20px;
 }
 
 .section {
-    border: 1px solid #000;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #8b4513;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
 }
 
-.sushi {
-    background: #ffffff;
+.menu-highlights {
+    background: #fff5e6;
     grid-column: span 1;
     grid-row: span 1;
 }
 
-.restaurant {
-    background: #000000;
-    color: white;
+.about-us {
+    background: #8b4513;
+    color: #fff5e6;
     grid-column: span 1;
     grid-row: span 1;
 }
 
-.image1 {
+.dining-area {
     grid-column: span 2;
 }
 
-.image2 img,
-.image1 img {
+.featured-dishes img,
+.dining-area img {
     width: 100%;
-    height: auto;
+    height: 300px;
+    object-fit: cover;
     display: block;
     border-radius: 8px;
 }
 
 h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+    font-size: 2rem;
+    margin-bottom: 15px;
     font-weight: bold;
-    text-transform: uppercase;
+    color: inherit;
+    font-family: "Nazanin", "Vazir", sans-serif;
 }
 
 p {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    text-align: justify;
 }
