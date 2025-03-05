@@ -97,3 +97,16 @@
     </div>
 </body>
 </html>
+<form action="">
+    <input type="file" accept="image/*" multiple>
+    
+    <label for="inp1">City Name:</label>
+    <input type="text" name="k1" id="inp1" list="datal">
+    
+    <datalist id="datal">
+        <option value="LA">LA</option>
+        <option value="newyork">New York</option>
+        <option value="tehran">Tehran</option>
+        <option value="shiraz">Shiraz</option>
+    </datalist>
+</form>
