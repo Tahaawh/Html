@@ -97,16 +97,42 @@
     </div>
 </body>
 </html>
-<form action="">
-    <input type="file" accept="image/*" multiple>
-    
-    <label for="inp1">City Name:</label>
-    <input type="text" name="k1" id="inp1" list="datal">
-    
-    <datalist id="datal">
-        <option value="LA">LA</option>
-        <option value="newyork">New York</option>
-        <option value="tehran">Tehran</option>
-        <option value="shiraz">Shiraz</option>
-    </datalist>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="">
+        <input type="file" accept="image/*" multiple>
+
+        <label for="inp1">City Name:</label>
+        <input type="text" name="k1" id="inp1" list="datal">
+
+        <datalist id="datal">
+            <option value="LA">LA</option>
+            <option value="newyork">New York</option>
+            <option value="tehran">Tehran</option>
+            <option value="shiraz">Shiraz</option>
+        </datalist>
+
+        <label for="s1">Choose:</label>
+        <select name="s1" id="s1" multiple>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+
+        <textarea name="textarea1" id="textarea1" cols="40" rows="5"></textarea>
+
+        <fieldset>
+            <legend>Input</legend>
+            <input type="text">
+        </fieldset>
+    </form>
+
+</body>
+</html>
