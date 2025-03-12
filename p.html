@@ -3,27 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Form</title>
+    <title>Modern Login Form</title>
     <style>
-        body {
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
             font-family: Arial, sans-serif;
+        }
+
+        body {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f4f4f4;
+            background-color: #f0f5ff;
         }
 
         .login-container {
-            background: #fff;
+            display: flex;
+            align-items: center;
+            background: white;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-            width: 300px;
-            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+            width: 700px;
         }
 
-        .login-container h2 {
+        .form-section {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .form-section h2 {
+            color: #007bff;
             margin-bottom: 20px;
         }
 
@@ -31,21 +44,32 @@
             width: 100%;
             padding: 12px;
             margin: 10px 0;
-            border: 1px solid #ccc;
+            border: 2px solid #ccc;
             border-radius: 8px;
             transition: all 0.3s ease;
             box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
         }
 
         .input-field:focus {
             outline: none;
             border-color: #007bff;
-            box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.6);
+            box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.6);
         }
 
         .input-field::placeholder {
-            color: #aaa;
+            color: #999;
             font-style: italic;
+        }
+
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .checkbox-container input {
+            margin-right: 10px;
         }
 
         .btn {
@@ -63,14 +87,35 @@
         .btn:hover {
             background-color: #0056b3;
         }
+
+        .illustration {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .illustration img {
+            width: 100%;
+            max-width: 250px;
+        }
     </style>
 </head>
 <body>
     <div class="login-container">
-        <h2>Login</h2>
-        <input type="email" class="input-field" placeholder="Enter your email">
-        <input type="password" class="input-field" placeholder="Enter your password">
-        <button class="btn">Login</button>
+        <div class="form-section">
+            <h2>Login</h2>
+            <input type="email" class="input-field" placeholder="example@gmail.com">
+            <input type="password" class="input-field" placeholder="account pass">
+            <div class="checkbox-container">
+                <input type="checkbox" id="agree">
+                <label for="agree">I agree with conditions</label>
+            </div>
+            <button class="btn">Login</button>
+        </div>
+        <div class="illustration">
+            <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="Login Illustration">
+        </div>
     </div>
 </body>
 </html>
